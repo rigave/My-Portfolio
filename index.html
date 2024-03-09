@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&family=Roboto+Condensed:wght@300;400;500&display=swap');
+  </style>
+  <script src="https://kit.fontawesome.com/39d89e87ea.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h2>Mg World</h2>
+        <ul id="side-menu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark"></i>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+      </nav>
+      <div class="header-text">
+        <p>Designer/Developer</p>
+        <h1>Hi, I'm <span>Rohan</span><br> From Mumbai</h1>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------about----------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/User.png" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="subtitle">About Me</h1>
+          <p>
+            With a background in Graphic Design and Web Development, I have honed my skills over 1 years in the industry.
+            What drives me is the opportunity to blend creativity with technology to delivered results that exceed expectations.
+            Whether collaborating with startup or established brands, I approach each project with enthusiasm and commitment to excellence.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Graphic Designer</span><br>Designing Web/App interfaces and more, (Photoshop, Illustrator, After Effect).</li>
+              <li><span>Web Development</span><br>Web app Development, (html, css, js, nodejs, mongoDB, react js)</li>
+              <li><span>Game Development</span><br>Building android/ios games, (Unity Game Engine, c#, )</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2024 Current</span><br>Beginner</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2010</span><br>S.s.c pass from maharashtra board.</li>
+              <li><span>2018</span><br>Graphic design/Motion Graphics Certification</li>
+              <li><span>2019</span><br>Game Development Certification</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ------------services------------------ -->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="subtitle">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>
+            Beyond just aesthetics , I ensure that websites are fully functional and optimized for performance. Using Python
+            Flask and other cutting-edge technologies, I develop dynamic and responsive websites that engage users across all devices.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>Graphic Design</h2>
+          <p>
+            Transforming ideas into visually striking and user friendly websites is my specialty. whether you're starting from scratch or 
+            looking to revamp your existing site, I collaborate closely with clients to design custom solutions tailored to their brand and audience.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-gamepad"></i>
+          <h2>Game Development</h2>
+          <p>
+            Bring your brand to life with captivating animations that leave a lasting impression. From animation to game play coding, 
+            I leverage my expertise in animation to add depth and personality to your digital presence.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ----------------portfolio--------------------- -->
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="subtitle">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.jpg" alt="">
+          <div class="layer">
+            <h3>Photo Manuplation Gallery</h3>
+            <p>Edited photo gallery </p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.jpg" alt="">
+          <div class="layer">
+            <h3>Anime Website</h3>
+            <p>My top-10 anime list using anime api made in html, css and js.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.jpg" alt="">
+          <div class="layer">
+            <h3>2D Runner</h3>
+            <p>2d platformer endless runner game. Download it from play store</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+
+  <!-- -------------------------contact---------------------------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="subtitle">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>rigave200@gmail.com</p>
+          <p><i class="fa-brands fa-square-whatsapp"></i>9326673110</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/rohan.igave"><i class="fa-brands fa-square-facebook"></i></i></a>
+            <a href="https://www.instagram.com/mgworld_grphics"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/rohan-igave-8121681b2/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://web.telegram.org/k/"><i class="fab fa-telegram"></i></a>
+          </div>
+          <a href="ROHAN IGAVE.docx" download="resume.pdf" class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Enter Your Name" required>
+            <input type="email" name="Email" placeholder="Enter Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Enter Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright &copy; Rohan. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>
